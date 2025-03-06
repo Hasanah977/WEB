@@ -1,0 +1,127 @@
+/* Mengimpor font dari Google Fonts untuk tampilan teknologi */
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap");
+
+/* Reset default untuk semua elemen */
+* {
+  margin: 0; /* Menghilangkan margin bawaan */
+  padding: 0; /* Menghilangkan padding bawaan */
+  box-sizing: border-box; /* Memastikan ukuran elemen termasuk padding dan border */
+  font-family: "Orbitron", sans-serif; /* Menggunakan font Orbitron untuk tampilan teknologi */
+}
+
+/* Styling untuk body agar tampil dengan latar belakang gradient */
+body {
+  background: linear-gradient(135deg, #4fa1eb, #80c4f8); /* Gradient biru modern */
+  color: white; /* Warna teks default menjadi putih */
+  height: 100vh; /* Mengisi seluruh tinggi layar */
+  display: flex; /* Menggunakan flexbox untuk layout */
+  flex-direction: column; /* Menyusun elemen secara vertikal */
+  align-items: center; /* Memusatkan elemen secara horizontal */
+  justify-content: center; /* Memusatkan elemen secara vertikal */
+  text-align: center; /* Menyusun teks ke tengah */
+  padding: 20px; /* Memberi ruang di sekitar konten */
+}
+
+/* Container utama untuk konten agar tidak terlalu lebar */
+.container {
+  max-width: 80%; /* Membatasi lebar maksimum agar responsif */
+}
+
+/* Styling untuk teks judul */
+h1 {
+  font-size: 50px; /* Ukuran besar untuk menarik perhatian */
+  font-weight: bold; /* Teks lebih tebal */
+  color: white; /* Warna teks putih */
+}
+
+/* Styling untuk teks paragraf */
+p {
+  font-size: 24px; /* Ukuran teks lebih besar untuk keterbacaan */
+  color: white; /* Warna putih */
+  max-width: 800px; /* Membatasi lebar teks agar tidak terlalu panjang */
+  margin: 0 auto; /* Memusatkan paragraf */
+}
+
+/* Navbar untuk navigasi */
+nav {
+  width: 100%; /* Lebar penuh */
+  background: #00103c; /* Warna biru tua untuk kontras */
+  padding: 12px 0; /* Padding atas dan bawah */
+  position: fixed; /* Navbar tetap di atas saat scroll */
+  top: 0; /* Menempel di atas layar */
+  left: 0; /* Posisi di paling kiri */
+  display: flex; /* Menggunakan flexbox */
+  justify-content: center; /* Memusatkan menu */
+  align-items: center; /* Menyusun item secara vertikal */
+  z-index: 1000; /* Memastikan navbar selalu di atas */
+}
+
+/* Styling untuk daftar menu navbar */
+nav ul {
+  list-style: none; /* Menghilangkan bullet point */
+  display: flex; /* Menggunakan flexbox */
+  padding: 0; /* Menghilangkan padding */
+}
+
+/* Styling untuk item menu */
+nav ul li {
+  margin: 0 15px; /* Memberi jarak antar item menu */
+}
+
+/* Styling untuk link dalam menu navbar */
+nav ul li a {
+  color: white; /* Warna teks putih */
+  text-decoration: none; /* Menghilangkan garis bawah */
+  font-size: 16px; /* Ukuran font sedang */
+  padding: 8px 12px; /* Memberi ruang dalam tombol */
+  border-radius: 5px; /* Membuat sudut membulat */
+  transition: background 0.3s ease-in-out, opacity 0.3s ease-in-out; /* Efek transisi */
+}
+
+/* Efek hover pada menu navbar */
+nav ul li a:hover {
+  background: rgba(255, 255, 255, 0.2); /* Latar belakang transparan saat hover */
+  opacity: 0.9; /* Sedikit mengurangi transparansi */
+}
+
+/* Styling container utama */
+.container {
+  text-align: center; /* Memusatkan teks */
+  max-width: 80%; /* Lebar maksimum */
+  position: relative; /* Menghindari tumpang tindih dengan navbar */
+  padding: 20px; /* Memberi ruang di sekitar konten */
+}
+
+/* Styling untuk teks judul utama */
+h1 {
+  font-size: 50px; /* Ukuran teks besar */
+  font-weight: bold; /* Teks tebal */
+}
+
+/* Styling untuk teks deskripsi */
+p {
+  font-size: 24px; /* Ukuran font besar untuk keterbacaan */
+  margin-bottom: 20px; /* Memberi jarak di bawah teks */
+}
+
+/* Styling untuk tombol Next */
+.btn-next {
+  display: inline-block; /* Menjadikan elemen inline tetapi tetap bisa diatur lebar dan tinggi */
+  margin-top: 20px; /* Jarak atas dengan teks sebelumnya */
+  padding: 12px 24px; /* Ukuran tombol */
+  font-size: 18px; /* Ukuran teks dalam tombol */
+  font-weight: bold; /* Teks lebih tebal */
+  background-color: #00103c; /* Warna biru tua untuk tombol */
+  color: white; /* Warna teks putih */
+  text-decoration: none; /* Menghilangkan garis bawah pada link */
+  border-radius: 8px; /* Membuat sudut membulat */
+  border: none; /* Menghilangkan border */
+  cursor: pointer; /* Mengubah kursor menjadi tangan saat dihover */
+  transition: background 0.3s ease-in-out, transform 0.2s ease-in-out; /* Efek transisi */
+}
+
+/* Efek hover pada tombol Next */
+.btn-next:hover {
+  background-color: #002766; /* Warna lebih gelap saat hover */
+  transform: scale(1.05); /* Membesarkan sedikit saat dihover */
+}

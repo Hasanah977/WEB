@@ -1,0 +1,211 @@
+/* Impor Font Orbitron dari Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap");
+
+/* Terapkan font Orbitron ke beberapa elemen teks */
+.sistem-informasi,
+.about-us,
+.menghubungkan-teknologi-bisnis,
+.mengapa-memilih-kami,
+.teknologi-terkini,
+.prospek-karir,
+.dukungan-akademik,
+.langkah-bergabung,
+.sisfo-container,
+.newsletter {
+  font-family: "Orbitron", sans-serif; /* Gunakan font Orbitron */
+}
+
+/* General Styles (Gaya umum untuk seluruh halaman) */
+body {
+  font-family: Arial, sans-serif; /* Gunakan font default Arial */
+  margin: 0; /* Hilangkan margin bawaan */
+  padding: 0; /* Hilangkan padding bawaan */
+  background: linear-gradient(
+    to bottom,
+    #4fa1eb,
+    #a0d8f4
+  ); /* Latar belakang dengan gradasi dari biru langit ke biru muda */
+  color: white; /* Warna teks utama putih */
+}
+
+/* Navbar (Menu navigasi) */
+nav {
+  display: flex; /* Menggunakan flexbox untuk tata letak yang fleksibel */
+  justify-content: space-between; /* Menempatkan elemen di kedua sisi navbar */
+  align-items: center; /* Tengahkan elemen secara vertikal */
+  padding: 15px 30px; /* Tambahkan ruang di dalam navbar */
+  background: linear-gradient(
+    to right,
+    #00103c,
+    #0a3990
+  ); /* Latar belakang gradasi dari biru tua ke biru gelap */
+}
+
+nav .logo {
+  font-size: 22px; /* Ukuran teks logo */
+  font-weight: bold; /* Buat teks lebih tebal */
+  color: white; /* Warna teks logo */
+}
+
+nav ul {
+  list-style: none; /* Hilangkan tanda bullet pada daftar */
+  display: flex; /* Menggunakan flexbox untuk menata menu horizontal */
+  gap: 15px; /* Beri jarak antar item menu */
+}
+
+nav ul li a {
+  text-decoration: none; /* Hilangkan garis bawah pada link */
+  color: white; /* Warna teks menu */
+  transition: 0.3s; /* Efek transisi untuk perubahan warna */
+}
+
+nav ul li a:hover {
+  color: #00103c; /* Ubah warna saat dihover */
+}
+
+/* Hero Section (Bagian utama di atas halaman) */
+.hero {
+  background: url("hero-image.jpg") no-repeat center center/cover; /* Gunakan gambar sebagai latar belakang */
+  height: 200px; /* Tinggi hero section */
+  display: flex; /* Menggunakan flexbox */
+  align-items: center; /* Pusatkan teks secara vertikal */
+  justify-content: center; /* Pusatkan teks secara horizontal */
+}
+
+.hero h1 {
+  font-size: 36px; /* Ukuran teks utama */
+}
+
+/* About & Contact (Bagian Tentang Kami & Kontak) */
+.about,
+.contact {
+  background: linear-gradient(
+    to bottom,
+    #0a3990,
+    #4fa1eb
+  ); /* Latar belakang gradasi dari biru gelap ke biru langit */
+  text-align: center; /* Tengahkan teks */
+  padding: 50px; /* Tambahkan ruang di dalam section */
+}
+
+.about h1,
+.contact h1 {
+  font-size: 32px; /* Ukuran teks judul */
+  color: #00103c; /* Warna teks biru tua */
+}
+
+/* Stats Section (Bagian Statistik) */
+.stats {
+  display: flex; /* Gunakan flexbox untuk menata elemen secara horizontal */
+  justify-content: space-around; /* Bagikan elemen secara merata */
+  padding: 30px; /* Tambahkan ruang di dalam section */
+  background: linear-gradient(to right, #4fa1eb, #a0d8f4); /* Gradasi biru yang lembut */
+}
+
+.stat-box {
+  text-align: center; /* Tengahkan teks */
+}
+
+/* Why Choose Section (Bagian Mengapa Memilih Kami) */
+.why-choose {
+  text-align: center; /* Tengahkan teks */
+  padding: 50px; /* Tambahkan ruang di dalam section */
+}
+
+.features {
+  display: flex; /* Gunakan flexbox untuk menata elemen sejajar */
+  justify-content: center; /* Tengahkan elemen */
+  gap: 20px; /* Beri jarak antar fitur */
+}
+
+.feature-box {
+  background: #0a3990; /* Latar belakang biru gelap */
+  padding: 20px; /* Tambahkan ruang di dalam box */
+  border-radius: 10px; /* Buat sudut lebih membulat */
+}
+
+/* How It Works (Bagian Cara Kerja) */
+.how-it-works {
+  padding: 50px; /* Tambahkan ruang di dalam section */
+  background: linear-gradient(
+    to bottom,
+    #4fa1eb,
+    #a0d8f4
+  ); /* Latar belakang gradasi */
+}
+
+.how-it-works ol {
+  list-style: decimal; /* Gunakan angka untuk daftar */
+  padding-left: 40px; /* Beri jarak di sebelah kiri */
+}
+
+/* Partners (Bagian Partner) */
+.partners {
+  text-align: center; /* Tengahkan teks */
+  padding: 50px; /* Tambahkan ruang di dalam section */
+}
+
+.partner-logos img {
+  width: 100px; /* Ukuran logo partner */
+  margin: 10px; /* Beri jarak antar logo */
+}
+
+/* Newsletter (Bagian Berlangganan) */
+.newsletter {
+  text-align: center; /* Tengahkan teks */
+  padding: 30px; /* Tambahkan ruang di dalam section */
+  background: linear-gradient(to right, #0a3990, #4fa1eb); /* Gradasi biru */
+}
+
+.newsletter input {
+  padding: 10px; /* Beri ruang di dalam input */
+  width: 300px; /* Lebar input */
+}
+
+.newsletter button {
+  margin-left: 10px; /* Jarak antara input dan tombol */
+  background: #00103c; /* Warna tombol */
+  color: white; /* Warna teks tombol */
+  border: none; /* Hilangkan border */
+  padding: 10px 15px; /* Ruang di dalam tombol */
+  cursor: pointer; /* Ubah kursor menjadi pointer */
+  transition: 0.3s; /* Efek transisi */
+}
+
+.newsletter button:hover {
+  background: #0a3990; /* Ubah warna tombol saat dihover */
+}
+
+/* Footer (Bagian Kaki Halaman) */
+footer {
+  background: linear-gradient(to right, #00103c, #0a3990); /* Gradasi biru tua */
+  text-align: center; /* Tengahkan teks */
+  padding: 20px; /* Tambahkan ruang di dalam footer */
+}
+
+footer a {
+  color: #a0d8f4; /* Warna teks link */
+  text-decoration: none; /* Hilangkan garis bawah */
+}
+
+footer a:hover {
+  color: #3578ff; /* Warna sedikit lebih terang saat dihover */
+}
+
+/* Sisfo Container (Bagian Khusus Sistem Informasi) */
+.sisfo-container {
+  display: flex; /* Gunakan flexbox */
+  align-items: center; /* Tengahkan teks dan gambar sejajar */
+  justify-content: center; /* Tengahkan elemen secara horizontal */
+  gap: 10px; /* Beri jarak antara teks dan gambar */
+}
+
+.sisfo-container img {
+  width: 150px; /* Ukuran gambar */
+  height: auto; /* Menjaga proporsi gambar */
+}
+
+.sisfo-container h1 {
+  font-size: 24px; /* Ukuran teks judul */
+  margin: 0; /* Hilangkan margin bawaan */
+}

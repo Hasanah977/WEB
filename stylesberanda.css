@@ -1,0 +1,161 @@
+/* Import Font */
+/* Mengimpor font Orbitron dan Poppins dari Google Fonts untuk digunakan dalam teks */
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap");
+
+/* Reset dan Gaya Umum */
+* {
+  font-family: "Poppins", sans-serif; /* Menggunakan font Poppins sebagai default untuk semua elemen */
+  margin: 0; /* Menghilangkan margin default */
+  padding: 0; /* Menghilangkan padding default */
+  box-sizing: border-box; /* Memastikan padding dan border tidak mempengaruhi ukuran elemen */
+}
+
+/* Body */
+body {
+  background: linear-gradient(
+    to bottom,
+    #4fa1eb,
+    #a0d8f4
+  ); /* Memberikan efek gradasi warna biru pada latar belakang */
+  color: white; /* Mengatur warna teks menjadi putih */
+  text-align: center; /* Membuat semua teks berada di tengah */
+}
+
+/* Navbar */
+nav {
+  background: linear-gradient(
+    to right,
+    #00103c,
+    #0a3990
+  ); /* Warna latar belakang navbar dengan gradasi biru tua */
+  padding: 15px 0; /* Menambahkan ruang di atas dan bawah navbar */
+}
+
+nav ul {
+  list-style: none; /* Menghilangkan bullet points pada daftar */
+  display: flex; /* Membuat daftar menu sejajar */
+  justify-content: center; /* Memusatkan daftar menu */
+  gap: 20px; /* Memberikan jarak antar item menu */
+}
+
+nav ul li a {
+  font-family: "Orbitron", sans-serif; /* Menggunakan font Orbitron untuk menu navbar */
+  font-weight: 700; /* Membuat teks tebal */
+  font-size: 18px; /* Mengatur ukuran font */
+  color: white; /* Mengatur warna teks menjadi putih */
+  text-decoration: none; /* Menghilangkan garis bawah pada teks */
+  transition: color 0.3s; /* Memberikan efek transisi saat perubahan warna */
+}
+
+nav ul li a:hover {
+  color: #a0d8f4; /* Mengubah warna teks menjadi biru muda saat hover */
+}
+
+/* Hero Section */
+.hero {
+  display: flex; /* Menggunakan flexbox untuk mengatur tata letak */
+  justify-content: center; /* Memusatkan konten */
+  align-items: center; /* Menyusun elemen agar sejajar secara vertikal */
+  text-align: left; /* Mengatur teks agar rata kiri */
+  padding: 60px; /* Memberikan ruang di sekitar konten */
+  gap: 50px; /* Memberikan jarak antar elemen */
+  flex-wrap: wrap; /* Mengatur agar elemen turun jika layar kecil */
+}
+
+.hero-text {
+  max-width: 400px; /* Membatasi lebar teks agar tidak terlalu panjang */
+}
+
+.hero-text h1 {
+  font-family: "Orbitron", sans-serif; /* Menggunakan font Orbitron untuk judul */
+  font-size: 48px; /* Mengatur ukuran font judul */
+  font-weight: 700; /* Membuat teks judul tebal */
+  color: white; /* Mengatur warna teks menjadi putih */
+}
+
+.hero-text p {
+  font-size: 18px; /* Mengatur ukuran font paragraf */
+  color: #00103c; /* Mengatur warna teks menjadi biru tua */
+}
+
+.hero-image img {
+  width: 300px; /* Mengatur ukuran gambar */
+  border-radius: 10px; /* Membuat sudut gambar membulat */
+}
+
+/* Features Section */
+.features {
+  display: flex; /* Menggunakan flexbox untuk mengatur tata letak fitur */
+  justify-content: center; /* Memusatkan elemen */
+  gap: 30px; /* Memberikan jarak antar fitur */
+  padding: 40px; /* Menambahkan ruang di sekitar fitur */
+  flex-wrap: wrap; /* Agar tetap responsif pada layar kecil */
+}
+
+.feature-box {
+  background: #0a3990; /* Memberikan warna biru tua pada box fitur */
+  padding: 20px; /* Menambahkan ruang dalam box */
+  border-radius: 10px; /* Membuat sudut box membulat */
+  text-align: center; /* Memusatkan teks dalam box */
+  width: 250px; /* Menentukan lebar box fitur */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Menambahkan efek bayangan */
+  transition: transform 0.3s ease-in-out; /* Menambahkan efek hover */
+}
+
+.feature-box:hover {
+  transform: translateY(-5px); /* Mengangkat box saat hover */
+}
+
+.feature-box h3 {
+  color: #a0d8f4; /* Mengubah warna judul fitur menjadi biru muda */
+  font-family: "Orbitron", sans-serif; /* Menggunakan font Orbitron untuk judul */
+  font-weight: 700; /* Membuat teks judul lebih tebal */
+}
+
+.feature-box p {
+  font-size: 14px; /* Mengatur ukuran teks paragraf fitur */
+}
+
+/* Tombol */
+.button {
+  display: inline-block; /* Membuat tombol dalam bentuk inline-block */
+  background: #00103c; /* Warna latar tombol biru tua */
+  color: white; /* Warna teks putih */
+  padding: 5px 10px; /* Memberikan ruang dalam tombol */
+  font-size: 14px; /* Mengatur ukuran teks dalam tombol */
+  border-radius: 5px; /* Membulatkan sudut tombol */
+  text-decoration: none; /* Menghilangkan garis bawah pada teks tombol */
+  font-weight: bold; /* Membuat teks tebal */
+  font-family: "Orbitron", sans-serif; /* Menggunakan font Orbitron */
+  transition: background 0.3s, transform 0.2s ease; /* Efek hover */
+  margin-top: 15px; /* Memberikan jarak atas tombol */
+  width: 70px; /* Menentukan lebar tombol */
+  text-align: center; /* Memusatkan teks dalam tombol */
+}
+
+.button:hover {
+  background: #4fa1eb; /* Mengubah warna latar belakang tombol saat hover */
+  transform: scale(1.05); /* Membuat tombol sedikit lebih besar saat hover */
+}
+
+/* Footer */
+footer {
+  margin-top: 40px; /* Menambahkan jarak atas pada footer */
+  background: linear-gradient(
+    to right,
+    #00103c,
+    #0a3990
+  ); /* Warna latar belakang dengan gradasi */
+  padding: 15px 0; /* Memberikan ruang dalam footer */
+  font-size: 14px; /* Mengatur ukuran teks footer */
+  color: white; /* Warna teks putih */
+}
+
+footer a {
+  color: #a0d8f4; /* Mengubah warna link dalam footer menjadi biru muda */
+  text-decoration: none; /* Menghilangkan garis bawah pada link */
+}
+
+footer a:hover {
+  color: #4fa1eb; /* Mengubah warna link saat hover */
+}

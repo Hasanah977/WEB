@@ -1,0 +1,144 @@
+/* Mengimpor font Orbitron dari Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap");
+
+/* Gaya untuk judul pendaftaran dan sistem informasi */
+.pendaftaran-title,
+.sistem-informasi {
+  font-family: "Orbitron", sans-serif; /* Menggunakan font Orbitron */
+  font-weight: 700; /* Membuat teks lebih tebal */
+  text-align: center; /* Teks rata tengah */
+  color: #ffffff; /* Warna teks putih */
+  text-transform: uppercase; /* Huruf besar semua */
+}
+
+/* Gaya dasar untuk seluruh halaman */
+body {
+  font-family: Arial, sans-serif; /* Menggunakan font Arial sebagai default */
+  margin: 0; /* Menghapus margin default */
+  padding: 0; /* Menghapus padding default */
+  background-color: #4fa1eb; /* Warna latar belakang biru langit */
+  color: #1a1a1a; /* Warna teks utama hitam keabu-abuan */
+}
+
+/* Navbar */
+nav {
+  display: flex; /* Menjadikan navbar flexbox */
+  justify-content: space-between; /* Menjadikan konten tersebar merata */
+  align-items: center; /* Menyelaraskan item ke tengah */
+  padding: 15px 30px; /* Padding di dalam navbar */
+  background: #00103c; /* Warna latar belakang biru gelap */
+}
+
+/* Gaya untuk logo navbar */
+nav .logo {
+  font-size: 22px; /* Ukuran font logo */
+  font-weight: bold; /* Membuat teks logo lebih tebal */
+  color: white; /* Warna teks putih */
+}
+
+/* Mengatur daftar navigasi */
+nav ul {
+  list-style: none; /* Menghapus bullet list */
+  display: flex; /* Menjadikan daftar navigasi flexbox */
+  gap: 15px; /* Jarak antar item */
+}
+
+/* Gaya untuk link dalam navbar */
+nav ul li a {
+  text-decoration: none; /* Menghapus garis bawah pada link */
+  color: white; /* Warna teks putih */
+  font-weight: 600; /* Ketebalan font */
+}
+
+/* Efek hover untuk link navbar */
+nav ul li a:hover {
+  color: #4fa1eb; /* Warna biru muda ketika hover */
+}
+
+/* Hero Section */
+.hero {
+  text-align: center; /* Teks di tengah */
+  padding: 50px; /* Padding bagian dalam */
+  background: #4fa1eb; /* Warna latar belakang biru langit */
+}
+
+/* Gaya untuk judul hero section */
+.hero h1 {
+  font-size: 32px; /* Ukuran font judul */
+}
+
+/* Gaya untuk paragraf di hero section */
+.hero p {
+  font-size: 16px; /* Ukuran font paragraf */
+}
+
+/* Form Container */
+.form-container {
+  width: 50%; /* Lebar container form */
+  margin: 30px auto; /* Posisi form ke tengah */
+  background: white; /* Warna latar belakang putih */
+  padding: 20px; /* Padding di dalam form */
+  border-radius: 10px; /* Membuat sudut membulat */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Efek bayangan */
+}
+
+/* Mengatur tata letak form */
+form {
+  display: flex; /* Menjadikan form flexbox */
+  flex-direction: column; /* Menyusun elemen dalam kolom */
+}
+
+/* Gaya untuk label dalam form */
+label {
+  font-weight: bold; /* Membuat teks label lebih tebal */
+  margin: 10px 0 5px; /* Jarak antara label dan input */
+}
+
+/* Gaya untuk input, textarea, dan select */
+input,
+textarea,
+select {
+  padding: 10px; /* Padding dalam input */
+  width: 100%; /* Lebar penuh */
+  border: 1px solid #ccc; /* Garis batas input */
+  border-radius: 5px; /* Membulatkan sudut */
+}
+
+/* Gaya khusus untuk textarea */
+textarea {
+  resize: none; /* Menonaktifkan resize */
+  height: 80px; /* Tinggi textarea */
+}
+
+/* Tombol submit */
+.btn {
+  background: #0a3990; /* Warna latar belakang tombol */
+  color: white; /* Warna teks putih */
+  padding: 12px; /* Padding dalam tombol */
+  border: none; /* Menghapus border */
+  margin-top: 15px; /* Jarak dari elemen atas */
+  cursor: pointer; /* Mengubah cursor saat hover */
+  font-weight: bold; /* Membuat teks lebih tebal */
+}
+
+/* Efek hover pada tombol */
+.btn:hover {
+  background: #062866; /* Warna lebih gelap saat hover */
+}
+
+/* Footer */
+footer {
+  text-align: center; /* Teks rata tengah */
+  padding: 15px; /* Padding dalam footer */
+  background: #0a3990; /* Warna latar belakang footer */
+  color: white; /* Warna teks putih */
+}
+
+footer a {
+  color: #a0d8f4; /* Mengubah warna teks link menjadi putih */
+  text-decoration: none; /* Opsional: Menghapus garis bawah pada link */
+}
+
+footer a:hover {
+  color: #3578ff; /* Opsional: Warna sedikit lebih terang saat dihover */
+}

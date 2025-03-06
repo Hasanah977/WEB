@@ -1,0 +1,198 @@
+/* Mengimpor font Orbitron dari Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap");
+
+/* Mengatur font untuk judul kontak agar lebih futuristik */
+.contact-kontak,
+.sistem-informasi {
+  font-family: "Orbitron", sans-serif; /* Menggunakan font Orbitron */
+  font-weight: 700; /* Membuat teks lebih tebal */
+  text-align: center; /* Teks rata tengah */
+  color: #ffffff; /* Warna teks putih */
+  text-transform: uppercase; /* Huruf besar semua */
+}
+
+/* Mengatur gaya dasar untuk elemen body */
+body {
+  font-family: Arial, sans-serif; /* Menggunakan font Arial sebagai default */
+  margin: 0; /* Menghilangkan margin default */
+  padding: 0; /* Menghilangkan padding default */
+  background-color: #4fa1eb; /* Memberikan warna biru langit sebagai latar belakang */
+  color: #ffffff; /* Mengatur warna teks menjadi hitam gelap */
+}
+
+/* Navbar Styles */
+/* Mengatur navigasi agar lebih responsif dan rapi */
+nav {
+  display: flex; /* Menggunakan flexbox untuk tata letak yang lebih fleksibel */
+  justify-content: space-between; /* Menyusun elemen di sisi kiri dan kanan */
+  align-items: center; /* Menyelaraskan item secara vertikal */
+  padding: 15px 30px; /* Memberikan ruang di dalam navbar */
+  background: #00103c; /* Warna biru gelap sebagai latar belakang */
+}
+
+/* Gaya untuk logo navbar */
+nav .logo {
+  font-size: 22px; /* Menyesuaikan ukuran teks */
+  font-weight: bold; /* Membuat teks lebih tebal */
+  color: white; /* Warna teks putih agar kontras dengan latar */
+}
+
+/* Gaya untuk daftar menu navbar */
+nav ul {
+  list-style: none; /* Menghilangkan bullet point default */
+  display: flex; /* Menggunakan flexbox agar menu tersusun horizontal */
+  gap: 15px; /* Memberikan jarak antar item */
+}
+
+/* Gaya untuk tautan menu navbar */
+nav ul li a {
+  text-decoration: none; /* Menghilangkan garis bawah default */
+  color: white; /* Mengatur warna teks putih */
+}
+
+/* Bagian About dan Contact */
+/* Mengatur latar belakang dan tata letak bagian About & Contact */
+.about,
+.contact {
+  background: #4fa1eb; /* Warna biru muda sebagai latar belakang */
+  text-align: center; /* Menyelaraskan teks ke tengah */
+  padding: 50px; /* Memberikan ruang di dalam elemen */
+}
+
+/* Mengatur ukuran dan warna judul di bagian About & Contact */
+.about h1,
+.contact h1 {
+  font-size: 32px; /* Menyesuaikan ukuran teks */
+  color: #00103c; /* Warna biru gelap untuk kontras */
+}
+
+/* Hero Section */
+/* Mengatur bagian utama di halaman */
+.hero {
+  text-align: center; /* Menyelaraskan teks ke tengah */
+  padding: 50px; /* Memberikan ruang dalam elemen */
+  background: #4fa1eb; /* Warna biru muda sebagai latar belakang */
+}
+
+/* Mengatur ukuran teks judul dalam Hero */
+.hero h1 {
+  font-size: 36px; /* Ukuran font lebih besar untuk judul utama */
+}
+
+/* Mengatur ukuran teks paragraf dalam Hero */
+.hero p {
+  font-size: 16px; /* Ukuran font standar untuk paragraf */
+}
+
+/* Contact Form Styles */
+/* Mengatur tampilan form kontak */
+.contact-form {
+  display: flex; /* Menggunakan flexbox untuk mengatur tata letak */
+  justify-content: center; /* Menyelaraskan form ke tengah */
+  padding: 50px; /* Memberikan ruang dalam elemen */
+  gap: 30px; /* Memberikan jarak antar elemen dalam form */
+}
+
+/* Mengatur tampilan container form */
+.form-container {
+  width: 50%; /* Menyesuaikan lebar form agar proporsional */
+}
+
+/* Mengatur input dan textarea dalam form */
+.form-container input,
+.form-container textarea {
+  width: 100%; /* Mengatur elemen agar mengambil seluruh lebar container */
+  padding: 10px; /* Memberikan ruang di dalam input */
+  margin: 10px 0; /* Menambahkan jarak antar input */
+  border-radius: 5px; /* Membuat sudut elemen lebih lembut */
+  border: 1px solid #ccc; /* Memberikan garis tepi yang halus */
+}
+
+/* Mengatur tampilan tombol dalam form */
+.btn {
+  background: #0a3990; /* Warna biru gelap */
+  color: white; /* Warna teks putih */
+  padding: 10px 20px; /* Menyesuaikan ukuran tombol */
+  border: none; /* Menghilangkan border default */
+  cursor: pointer; /* Mengubah kursor menjadi tangan saat diarahkan */
+}
+
+/* Contact Info Section */
+/* Mengatur bagian informasi kontak */
+.contact-info {
+  display: flex; /* Menggunakan flexbox untuk tata letak yang lebih rapi */
+  justify-content: center; /* Menyelaraskan elemen ke tengah */
+  padding: 30px; /* Memberikan ruang dalam elemen */
+  gap: 20px; /* Memberikan jarak antar elemen */
+}
+
+/* Mengatur tampilan box dalam informasi kontak */
+.info-box {
+  background: #002f87; /* Warna biru lebih gelap */
+  color: white; /* Warna teks putih agar kontras */
+  padding: 15px; /* Memberikan ruang dalam box */
+  border-radius: 8px; /* Membuat sudut elemen lebih lembut */
+  width: 100%; /* Mengatur lebar agar proporsional */
+  text-align: center; /* Menyelaraskan teks ke tengah */
+}
+
+/* Mengatur tampilan tautan dalam informasi kontak */
+.info-box a {
+  color: #ffd700; /* Warna emas agar terlihat mencolok */
+  text-decoration: none; /* Menghilangkan garis bawah default */
+  font-weight: bold; /* Membuat teks lebih tebal */
+}
+
+/* Efek hover untuk tautan dalam info kontak */
+.info-box a:hover {
+  text-decoration: underline; /* Menampilkan garis bawah saat diarahkan */
+}
+
+/* Map Section */
+/* Mengatur tampilan peta */
+.map {
+  text-align: center; /* Menyelaraskan elemen ke tengah */
+  padding: 30px; /* Memberikan ruang dalam elemen */
+}
+
+/* Mengatur ukuran dan tampilan iframe peta */
+.map iframe {
+  width: 80%; /* Mengatur lebar peta */
+  height: 300px; /* Mengatur tinggi peta */
+  border: none; /* Menghilangkan border default */
+  border-radius: 10px; /* Membuat sudut elemen lebih lembut */
+}
+
+/* Footer Section */
+/* Mengatur bagian footer */
+footer {
+  background: #0a3990; /* Warna biru gelap */
+  padding: 30px; /* Memberikan ruang dalam elemen */
+  color: white; /* Warna teks putih agar kontras */
+  text-align: center; /* Menyelaraskan teks ke tengah */
+}
+
+.contact-form .container {
+  display: flex; /* Menggunakan flexbox */
+  align-items: center; /* Menyelaraskan elemen secara vertikal */
+  justify-content: center; /* Menyelaraskan elemen di tengah */
+  gap: 50px; /* Memberikan jarak antara logo dan informasi */
+}
+
+.contact-form .container img {
+  width: 210px; /* Atur ukuran logo sesuai kebutuhan */
+  height: auto;
+}
+
+.contact-form .info-box {
+  text-align: left; /* Menyesuaikan teks agar rata kiri */
+}
+
+footer a {
+  color: #a0d8f4; /* Mengubah warna teks link menjadi putih */
+  text-decoration: none; /* Opsional: Menghapus garis bawah pada link */
+}
+
+footer a:hover {
+  color: #3578ff; /* Opsional: Warna sedikit lebih terang saat dihover */
+}

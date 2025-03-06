@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="stylesfrom.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h1 class="sistem-informasi">Sistem Informasi</h1>
+        <ul>
+          <li><a href="beranda.html">Beranda</a></li>
+          <li><a href="about.html">Tentang</a></li>
+          <li><a href="form.html">Form</a></li>
+          <li><a href="contact.html">Kontak</a></li>
+          <li><a href="index.html">Home</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <h2 class="pendaftaran-title">Pendaftaran Mahasiswa Baru</h2>
+      <p>
+        Silakan isi formulir di bawah ini untuk mendaftar sebagai mahasiswa baru
+        Program Studi Sistem Informasi.
+      </p>
+    </section>
+
+    <section class="form-container">
+      <form action="#" method="POST">
+        <label for="nama">Nama Lengkap:</label>
+        <input type="text" id="nama" name="nama" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="telepon">Nomor Telepon:</label>
+        <input type="tel" id="telepon" name="telepon" required />
+
+        <label for="alamat">Alamat:</label>
+        <textarea id="alamat" name="alamat" required></textarea>
+
+        <label for="jeniskelamin">Jenis Kelamin:</label>
+        <select id="jeniskelamin" name="jeniskelamin">
+          <option value="Laki-laki">Laki-laki</option>
+          <option value="Perempuan">Perempuan</option>
+        </select>
+
+        <label for="asal-sekolah">Asal Sekolah:</label>
+        <input type="text" id="asal-sekolah" name="asal-sekolah" required />
+
+        <label for="pilihan-program">Pilihan Program:</label>
+        <select id="pilihan-program" name="pilihan-program">
+          <option value="Sistem Informasi">Sistem Informasi</option>
+          <option value="Teknik Informatika">Teknik Informatika</option>
+          <option value="Rekayasa Perangkat Lunak">
+            Rekayasa Perangkat Lunak
+          </option>
+        </select>
+
+        <label for="berkas">Upload Berkas (PDF):</label>
+        <input type="file" id="berkas" name="berkas" accept=".pdf" required />
+
+        <button type="submit" class="btn">Kirim Pendaftaran</button>
+      </form>
+    </section>
+
+    <footer>
+      <p>
+        🌍 "Sistem Informasi: Solusi Masa Depan yang Cerdas dan Efektif!" 🌍
+      </p>
+      <p>
+        Copyright &copy; 2025
+        <a href="https://sisfo.ft.unsulbar.ac.id/" target="_blank"
+          >Prodi Sistem Informasi</a
+        >
+      </p>
+    </footer>
+  </body>
+</html>
